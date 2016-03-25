@@ -1,7 +1,0 @@
-v 3
-file . "6L_peralta_gabrillo_tb.vhdl" "20160325100941.000" "20160325180944.214":
-  entity farm_buzzer_tb at 5( 63) + 0 on 21;
-  architecture buzzer_tb of farm_buzzer_tb at 11( 165) + 0 on 22;
-file . "6L_peralta_gabrillo.vhdl" "20160325094258.000" "20160325180944.192":
-  entity farm_buzzer at 5( 62) + 0 on 19;
-  architecture buzzer of farm_buzzer at 17( 355) + 0 on 20;
