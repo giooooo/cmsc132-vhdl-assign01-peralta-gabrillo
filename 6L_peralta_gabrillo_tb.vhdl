@@ -60,8 +60,18 @@ architecture buzzer_tb of farm_buzzer_tb is
                 wait for 10 ns;
 
                 if(expected_res_in = '1') then
-                    
+                    if(expected_res_out = '1') then assert(expected_alarm = '1') report "Design Error!";
+                    else assert(expected_alarm = '0') report "Design Error!";
+                    end if;
                 end if;
+
+                if(expected_res_in = '0') then
+                    if(expected_res_out = '1') then assert(expected_alarm = '0') report "Design Error!";
+                    else assert(expected_alarm = '0') report "Design Error!";
+                    end if;
+                end if;
+
+
             end loop; 
             wait;
         end process;
